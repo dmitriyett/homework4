@@ -132,7 +132,17 @@
 // setComment('2016-11-02','Everything is ok', 'John');
 // setComment('2016-11-02', 'You could do it better!');
 
-//8 начал 30.12.2020 в 00:50 - Закончил
+//8 начал 30.12.2020 в 00:50 - Закончил 01:19
 
+// function createTimer(){
+//     let timer = performance.now();
+//     return function takeTimer(){
+//         return performance.now() - timer;
+//     }
+// }
+
+// let timer = createTimer();
+// alert('!')
+// alert( timer() );
 
 console.log("Helklo");
