@@ -107,9 +107,21 @@
 
 
 //6
-let source = {firsname: "Tom" , age: 10}
-function extend (){
-
+let source = { firstname: "Tom", age: 10 }, obj1 = { firstname: 'John' }, obj2 = { lastname: 'Doe' };
+function extend() {
+    for (let i = 1; i < arguments.length; i ++){
+        for (let prop in arguments[i]){
+            if( prop in arguments[0]){
+                arguments[0][prop] = arguments[i][prop];
+            }else{
+                arguments[0][prop] = arguments[i][prop];
+            }
+        }
+    }
+        
+    return arguments[0];
 }
-let a = extend(source,)
+
+let a = extend(source, obj1, obj2);
+console.log(a);
 console.log("Helklo");
