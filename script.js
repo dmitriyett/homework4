@@ -119,6 +119,20 @@
 // let a = extend(source,{ firstname: 'John' }, { lastname: 'Doe' });
 // console.log(a);
 
-//7
+//7 начал 30.12.2020 в 00:20 - Закончил 00:40
+
+// function setComment (date, message, author = "Anonymous"){
+//     if (date == undefined || message == undefined){
+//         alert("Required Arguments are missing");
+//         return;
+//     }
+//     console.log(`${author}, ${date}\n${message}`);
+// }
+
+// setComment('2016-11-02','Everything is ok', 'John');
+// setComment('2016-11-02', 'You could do it better!');
+
+//8 начал 30.12.2020 в 00:50 - Закончил
+
 
 console.log("Helklo");
