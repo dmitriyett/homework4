@@ -48,7 +48,7 @@
 // alert(me.getDiv(1, 0));
 
 
-//5 start at 00:14  end at 01:01 (Dont foget you must end UNDEFINED)
+//5 start at 00:14  end at 01:01 
 
 // let country = {
 //     name: 'Ukraine',
@@ -68,7 +68,7 @@
 // format.apply(country, ["[", "]"]); // [Ukraine]
 // format.call(country.capital, "", "" ); // Kyiv
 // format.apply(country.capital, ["", ""]); // Kyiv
-// format.apply(); // undefined
+// format.apply(country.language,["",""]); // undefined
 
 //6 start at 01:03 end at 01:10
 // let user = {
@@ -92,20 +92,37 @@
 // hello("World");
 
 //8  start at 01:55
+// function cube(number) {
 
-function cube(number){
-// Цикл
+//     let result = 1;
+//     for (i = 0; i < 3; i++) {
+//         result = result * number;
+//     }
+//     return console.log(result);
 
-    // let result = 1;
-    // for(i = 0; i < 3; i++){
-    //     result = result * number;
-    // }
-    // return console.log(result);
+// }
+// cube(5);
 
-// Рекурсия
-
+// function cube(number, n){
+//     if (n == 1 ){
+//         return number;
+//     }else{
+//         return number * cube(number, n - 1);
         
-}
+//     }
+// }
+// console.log(cube(5, 3));
 
+//9
 
-cube(5);
+// function sum (){
+//     if(arguments.length == 1){
+//         return arguments[0];
+//     }else{
+//         let rest = Array.prototype.slice.call(arguments, 0 , arguments.length-1);
+//         return arguments[arguments.length - 1] + sum.apply(null,rest);
+//         }
+// } 
+
+// console.log(sum(1,2,3,4,5))
+
